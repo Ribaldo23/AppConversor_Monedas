@@ -21,7 +21,7 @@ public class ConversorMonedas {
             double resultado = cantidad * tasaCambio;
             Moneda moneda = new Moneda(monedaObjetivo, tasaCambio);
             conversiones.add(moneda);
-            System.out.printf("%.2f EUR son %.2f %s\n", cantidad, resultado, monedaObjetivo);
+            System.out.printf("%.2f [ EUR ] son %.2f [%s]\n", cantidad, resultado, monedaObjetivo);
         } else {
             System.out.println("Moneda no disponible o error en las tasas de cambio.");
         }
